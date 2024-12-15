@@ -54,7 +54,7 @@ Browsing folders of images you can preview them on mouse hover and use the keybo
 Copy and paste into your terminal:
 
 ```bash
-curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/dist/install.sh | sh
+curl -L https://raw.githubusercontent.com/RamboRogers/shame/main/dist/install.sh | sh
 ```
 
 ### Windows Installation 🪟
@@ -62,7 +62,7 @@ curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/dist/install.
 Copy and paste into PowerShell:
 
 ```powershell
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/master/dist/install_windows.ps1'))
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/main/dist/install_windows.ps1'))
 ```
 
 Now you can run `shame` from anywhere on your machine:
