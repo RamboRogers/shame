@@ -18,6 +18,8 @@ Perfect for developers, content creators, and anyone who needs hassle-free file 
 
 ## ⚡ Installation
 
+The binary is available for Windows, Mac, and Linux. It's in the repo above. I've put together scripts to install it on each platform. You can review the scripts before running them above.
+
 ### 🪟 Windows Installation
 
 Copy and paste into PowerShell:
