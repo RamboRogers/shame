@@ -5,6 +5,34 @@ SHAME is a lightning-fast, zero-configuration file sharing and management tool t
 
 Perfect for developers, content creators, and anyone who needs hassle-free file sharing, SHAME combines the simplicity of a single binary with the power of modern web technologies. No complex setup, no dependencies, no accounts required - just run the binary and start sharing instantly.
 
+
+## Installs on Your Machine in Seconds ⚡
+
+### Windows Installation 🪟
+
+Copy and paste into PowerShell:
+
+```powershell
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/master/install_windows.ps1'))
+```
+
+
+### Apple Silicon (M1/M2/M3) & Intel Mac 🍎 and Linux 🐧
+
+Copy and paste into your terminal:
+
+```bash
+curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/install.sh | sh
+```
+
+Now you can run `shame` from anywhere on your machine:
+
+```bash
+shame
+```
+
+shames makes complicated tasks easy. Skip the manpages and just get it done. 🚀
+
 ## Usage
 
 Type `shame` in the folder you want to share from.
@@ -28,7 +56,7 @@ Browsing folders of images you can preview them on mouse hover and use the keybo
 - 📂 File Management
   - View and browse directories
   - Upload files and folders (drag & drop supported)
-  - Download files with resume support
+  - Download files support
   - Delete files and folders
   - Share files via direct links
   - Preview images and text files
@@ -46,32 +74,6 @@ Browsing folders of images you can preview them on mouse hover and use the keybo
   - Built-in logging
   - Console interface with colorful output
 
-
-## Installs on Your Machine in Seconds ⚡
-
-### Apple Silicon (M1/M2/M3) & Intel Mac 🍎 and Linux 🐧
-
-Copy and paste into your terminal:
-
-```bash
-curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/install.sh | sh
-```
-
-### Windows Installation 🪟
-
-Copy and paste into PowerShell:
-
-```powershell
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/master/install_windows.ps1'))
-```
-
-Now you can run `shame` from anywhere on your machine:
-
-```bash
-shame
-```
-
-shames makes complicated tasks easy. Skip the manpages and just get it done. 🚀
 
 ### Use Cases 💡
 
