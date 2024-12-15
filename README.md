@@ -5,11 +5,8 @@
     <strong>Lightning-fast, zero-configuration file sharing and management tool</strong>
   </p>
   <p>
-    <a href="#features">Features</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#usage">Usage</a> •
-    <a href="#use-cases">Use Cases</a> •
-    <a href="#license-and-contact">License</a>
+    <strong>🪟 Windows • 🍎 Mac • 🐧 Linux</strong><br>
+    <sub>Single Binary • Zero Dependencies • Instant Setup</sub>
   </p>
 </div>
 
