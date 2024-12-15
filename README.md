@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="shame.gif" alt="Shame Into Gif" width="600">
+  <img src="shame.gif" alt="Shame Into Gif">
   <h1>SHAME</h1>
   <p>
     <strong>Lightning-fast, zero-configuration file sharing and management tool</strong>
