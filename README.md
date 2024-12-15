@@ -16,12 +16,12 @@ SHAME makes it effortless to upload, download, preview and manage files through 
 
 Perfect for developers, content creators, and anyone who needs hassle-free file sharing, SHAME combines the simplicity of a single binary with the power of modern web technologies. No complex setup, no dependencies, no accounts required - just run the binary and start sharing instantly.
 
-## 🌟 What's New in v1.0.2s
+## 🌟 What's New in v1.0.3s
 
-- **🔐 Single-Use File Links**: Generate disposable links that automatically dissolve after use
+- **🛠️ Bug Fixes**: Resolved file deletion issues with special characters
+- **🔐 Authentication**: Enhanced security with authenticated mode by default
 - **🌐 Cloudflare Integration**: Secure HTTPS access with dynamic tunneling
-- **🛡️ Read-Only Mode**: Added option to run server in read-only mode
-- **🔒 Enhanced Security**: Improved access controls and file handling
+- **🛡️ Access Controls**: Flexible modes including read-only and insecure options
 
 ## ⚡ Installation
 
@@ -54,11 +54,11 @@ shame
 SHAME offers flexible deployment options to suit your needs:
 
 ```bash
-# Standard Usage
-shame                    # Start server in normal mode (authenticated)
+# Standard Usage (Authenticated by default)
+shame                    # Start server in normal mode
 shame readonly           # Start server in read-only mode
 
-# Cloudflare Tunnel Options
+# Cloudflare Tunnel Options (Secure Remote Access)
 shame tunnel            # Start with Cloudflare tunnel for HTTPS
 shame tunnel readonly   # Tunnel with read-only mode
 
