@@ -54,17 +54,21 @@ shame
 SHAME offers flexible deployment options to suit your needs:
 
 ```bash
-# Basic Usage
-shame                  # Start server in normal mode
+# Standard Usage
+shame                    # Start server in normal mode (authenticated)
+shame readonly           # Start server in read-only mode
 
-# Secure Sharing Options
-shame readonly         # Start server in read-only mode
-shame tunnel          # Start with Cloudflare tunnel for HTTPS
-shame tunnel readonly # Tunnel with read-only mode
+# Cloudflare Tunnel Options
+shame tunnel            # Start with Cloudflare tunnel for HTTPS
+shame tunnel readonly   # Tunnel with read-only mode
+
+# Local Network Options (Use with caution)
+shame insecure          # Start server without authentication (UNSAFE)
+shame insecure readonly # Start without auth in read-only mode (UNSAFE)
 
 # Help & Version
-shame help            # Show help message
-shame version         # Show version information
+shame help              # Show help message
+shame version           # Show version information
 ```
 
 ### 🌐 Sharing Modes
@@ -73,10 +77,11 @@ shame version         # Show version information
 <tr>
 <td>
 
-### Local Sharing
-- Quick LAN access
-- Direct file operations
-- Perfect for team collaboration
+### Authenticated Mode
+- Default secure mode
+- Access control
+- File operation logging
+- Perfect for remote access
 
 </td>
 <td>
@@ -94,10 +99,13 @@ shame version         # Show version information
 - Secure file distribution
 - Prevent modifications
 - View-only access
+- Available in all modes
 
 </td>
 </tr>
 </table>
+
+> ⚠️ **Security Notice**: The `insecure` flag disables authentication. Only use this option on trusted networks and when absolutely necessary.
 
 Type `shame` in the folder you want to share from:
 
