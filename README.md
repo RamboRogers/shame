@@ -21,25 +21,21 @@ Perfect for developers, content creators, and anyone who needs hassle-free file 
 
 ## ⚡ Installation
 
-<details>
-<summary><b>🪟 Windows Installation</b></summary>
+### 🪟 Windows Installation
 
 Copy and paste into PowerShell:
 
 ```powershell
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/master/install_windows.ps1'))
 ```
-</details>
 
-<details>
-<summary><b>🍎 Mac (Apple Silicon & Intel) and 🐧 Linux</b></summary>
+### 🍎 Mac (Apple Silicon & Intel) and 🐧 Linux
 
 Copy and paste into your terminal:
 
 ```bash
 curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/install.sh | sh
 ```
-</details>
 
 Now you can run `shame` from anywhere on your machine:
 
