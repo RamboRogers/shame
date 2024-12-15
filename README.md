@@ -16,6 +16,13 @@ SHAME makes it effortless to upload, download, preview and manage files through 
 
 Perfect for developers, content creators, and anyone who needs hassle-free file sharing, SHAME combines the simplicity of a single binary with the power of modern web technologies. No complex setup, no dependencies, no accounts required - just run the binary and start sharing instantly.
 
+## 🌟 What's New in v1.0.2s
+
+- **🔐 Single-Use File Links**: Generate disposable links that automatically dissolve after use
+- **🌐 Cloudflare Integration**: Secure HTTPS access with dynamic tunneling
+- **🛡️ Read-Only Mode**: Added option to run server in read-only mode
+- **🔒 Enhanced Security**: Improved access controls and file handling
+
 ## ⚡ Installation
 
 The binary is available for Windows, Mac, and Linux. It's in the repo above. I've put together scripts to install it on each platform. You can review the scripts before running them above.
@@ -44,18 +51,68 @@ shame
 
 ## 🚀 Usage
 
-Type `shame` in the folder you want to share from.
+SHAME offers flexible deployment options to suit your needs:
+
+```bash
+# Basic Usage
+shame                  # Start server in normal mode
+
+# Secure Sharing Options
+shame readonly         # Start server in read-only mode
+shame tunnel          # Start with Cloudflare tunnel for HTTPS
+shame tunnel readonly # Tunnel with read-only mode
+
+# Help & Version
+shame help            # Show help message
+shame version         # Show version information
+```
+
+### 🌐 Sharing Modes
+
+<table>
+<tr>
+<td>
+
+### Local Sharing
+- Quick LAN access
+- Direct file operations
+- Perfect for team collaboration
+
+</td>
+<td>
+
+### Tunnel Mode
+- Secure HTTPS access
+- Cloudflare integration
+- Public accessibility
+- Single-use share links
+
+</td>
+<td>
+
+### Read-Only Mode
+- Secure file distribution
+- Prevent modifications
+- View-only access
+
+</td>
+</tr>
+</table>
+
+Type `shame` in the folder you want to share from:
 
 <div align="center">
   <img src="shame.png" alt="shame console" width="800">
   <p><i>The console will output the URL to the web interface.</i></p>
 </div>
 
+### 🖥️ Web Interface
+
 <div align="center">
   <img src="shame-web.png" alt="shame web" width="800">
 </div>
 
-Browsing folders of images you can preview them on mouse hover and use the keyboard to navigate. Pressing enter will download the file.
+Browse folders and preview images with mouse hover and keyboard navigation. Press enter to download files.
 
 <div align="center">
   <img src="shame-image.png" alt="shame image preview" width="800">
@@ -72,6 +129,7 @@ Browsing folders of images you can preview them on mouse hover and use the keybo
 - 🌍 Cross-Platform Support
 - ⚡ Instant Setup
 - 🎨 Beautiful Dark Mode Interface
+- 🔐 Single-Use Share Links
 
 </td>
 <td>
@@ -86,10 +144,10 @@ Browsing folders of images you can preview them on mouse hover and use the keybo
 </td>
 <td>
 
-### Media Support
-- 🖼️ Image Preview
-- 📝 Text File Viewing
-- ⌨️ Keyboard Navigation
+### Security & Access
+- 🛡️ Read-Only Mode
+- 🌐 HTTPS via Cloudflare
+- 🔒 Access Controls
 - 📊 Progress Tracking
 - 🎯 Visual Feedback
 
