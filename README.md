@@ -1,29 +1,45 @@
-![Shame Into Gif](shame.gif)
-# SHAME
+<div align="center">
+  <img src="shame.gif" alt="Shame Into Gif" width="600">
+  <h1>SHAME</h1>
+  <p>
+    <strong>Lightning-fast, zero-configuration file sharing and management tool</strong>
+  </p>
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#usage">Usage</a> •
+    <a href="#use-cases">Use Cases</a> •
+    <a href="#license-and-contact">License</a>
+  </p>
+</div>
 
-SHAME is a lightning-fast, zero-configuration file sharing and management tool that lets you instantly share files and folders from any directory. With its sleek dark mode interface and powerful features, SHAME makes it effortless to upload, download, preview and manage files through your web browser. Whether you're sharing project files with teammates, hosting media content, or just need a quick way to transfer files between devices, SHAME provides a beautiful and intuitive solution that works right out of the box.
+---
+
+SHAME makes it effortless to upload, download, preview and manage files through your web browser. Whether you're sharing project files with teammates, hosting media content, or just need a quick way to transfer files between devices, SHAME provides a beautiful and intuitive solution that works right out of the box.
 
 Perfect for developers, content creators, and anyone who needs hassle-free file sharing, SHAME combines the simplicity of a single binary with the power of modern web technologies. No complex setup, no dependencies, no accounts required - just run the binary and start sharing instantly.
 
+## ⚡ Installation
 
-## Installs on Your Machine in Seconds ⚡
-
-### Windows Installation 🪟
+<details>
+<summary><b>🪟 Windows Installation</b></summary>
 
 Copy and paste into PowerShell:
 
 ```powershell
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RamboRogers/shame/master/install_windows.ps1'))
 ```
+</details>
 
-
-### Apple Silicon (M1/M2/M3) & Intel Mac 🍎 and Linux 🐧
+<details>
+<summary><b>🍎 Mac (Apple Silicon & Intel) and 🐧 Linux</b></summary>
 
 Copy and paste into your terminal:
 
 ```bash
 curl -L https://raw.githubusercontent.com/RamboRogers/shame/master/install.sh | sh
 ```
+</details>
 
 Now you can run `shame` from anywhere on your machine:
 
@@ -31,62 +47,78 @@ Now you can run `shame` from anywhere on your machine:
 shame
 ```
 
-shames makes complicated tasks easy. Skip the manpages and just get it done. 🚀
-
-## Usage
+## 🚀 Usage
 
 Type `shame` in the folder you want to share from.
 
-![shame console](shame.png)
+<div align="center">
+  <img src="shame.png" alt="shame console" width="800">
+  <p><i>The console will output the URL to the web interface.</i></p>
+</div>
 
-The console will output the URL to the web interface.
-
-![shame web](shame-web.png)
+<div align="center">
+  <img src="shame-web.png" alt="shame web" width="800">
+</div>
 
 Browsing folders of images you can preview them on mouse hover and use the keyboard to navigate. Pressing enter will download the file.
 
-![shame image preview](shame-image.png)
+<div align="center">
+  <img src="shame-image.png" alt="shame image preview" width="800">
+</div>
 
+## ✨ Features
 
-## Features
+<table>
+<tr>
+<td>
+
+### Core Features
 - 🚀 Single Binary, Zero Dependencies
-- 🌍 Cross-Platform (Linux, macOS, Windows)
-- ⚡ Instant Setup - Just Run and Share
+- 🌍 Cross-Platform Support
+- ⚡ Instant Setup
 - 🎨 Beautiful Dark Mode Interface
-- 📂 File Management
-  - View and browse directories
-  - Upload files and folders (drag & drop supported)
-  - Download files support
-  - Delete files and folders
-  - Share files via direct links
-  - Preview images and text files
-- 🖼️ Rich Media Support
-  - Image previews (JPG, PNG, GIF, WebP, SVG, BMP)
-  - Text file viewing (txt, md, json, etc.)
-  - Keyboard navigation for previews
-- 💻 Web Interface Features
-  - Directory listing with metadata
-  - Action buttons with visual feedback
-  - Progress tracking for uploads
-  - Responsive design
-- 🛠️ Developer Friendly
-  - HTTP API
-  - Built-in logging
-  - Console interface with colorful output
 
+</td>
+<td>
 
-### Use Cases 💡
+### File Operations
+- 📂 Directory Browsing
+- ⬆️ Drag & Drop Upload
+- ⬇️ Fast Downloads
+- 🗑️ File Management
+- 🔗 Direct Link Sharing
 
-I'm on a Mac here, will this know the right command to use?
+</td>
+<td>
 
+### Media Support
+- 🖼️ Image Preview
+- 📝 Text File Viewing
+- ⌨️ Keyboard Navigation
+- 📊 Progress Tracking
+- 🎯 Visual Feedback
 
-## License and Contact ⚖️
+</td>
+</tr>
+</table>
 
-This project is provided as is.  I'm not responsible for any damage it may cause.  Use at your own risk.
+## 💡 Use Cases
 
-### Connect With Me 🤝
-- GitHub: [RamboRogers](https://github.com/RamboRogers)
-- X/Twitter: [@rogerscissp](https://x.com/rogerscissp)
-- Website: [matthewrogers.org](https://matthewrogers.org)
+- **Local Development**: Share project files instantly with teammates
+- **Media Sharing**: Quick image and file previews
+- **File Transfer**: Move files between devices effortlessly
+- **Temporary Hosting**: Set up quick file sharing servers
 
-![github](ramborogers.png)
+## ⚖️ License and Contact
+
+<div align="center">
+  <p>This project is provided as is. Use at your own risk.</p>
+
+  ### Connect With Me 🤝
+
+  [![GitHub](https://img.shields.io/badge/GitHub-RamboRogers-181717?style=for-the-badge&logo=github)](https://github.com/RamboRogers)
+  [![Twitter](https://img.shields.io/badge/Twitter-@rogerscissp-1DA1F2?style=for-the-badge&logo=twitter)](https://x.com/rogerscissp)
+  [![Website](https://img.shields.io/badge/Web-matthewrogers.org-00ADD8?style=for-the-badge&logo=google-chrome)](https://matthewrogers.org)
+
+  <img src="ramborogers.png" alt="github" width="400">
+</div>
