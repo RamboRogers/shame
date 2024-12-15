@@ -38,14 +38,25 @@ fi
 DOWNLOAD_URL="https://raw.githubusercontent.com/RamboRogers/shame/master/${BINARY_NAME}"
 
 echo -e "${BLUE}Downloading SHAME for ${OS} ${ARCH}...${NC}"
+echo -e "${BLUE}Download URL: ${DOWNLOAD_URL}${NC}"
 
 # Create temporary directory
 TMP_DIR=$(mktemp -d)
 cd ${TMP_DIR}
 
-# Download binary
-if ! curl -L -o shame "${DOWNLOAD_URL}"; then
-    echo -e "${RED}Failed to download SHAME${NC}"
+# Download binary with error checking
+HTTP_RESPONSE=$(curl -L -w "%{http_code}" -o shame "${DOWNLOAD_URL}" 2>/dev/null)
+if [ "${HTTP_RESPONSE}" != "200" ]; then
+    echo -e "${RED}Failed to download SHAME - HTTP Status: ${HTTP_RESPONSE}${NC}"
+    echo -e "${RED}URL: ${DOWNLOAD_URL}${NC}"
+    echo -e "${RED}Please check if the binary exists in the repository${NC}"
+    rm -rf ${TMP_DIR}
+    exit 1
+fi
+
+# Verify file was downloaded and has content
+if [ ! -s shame ]; then
+    echo -e "${RED}Downloaded file is empty${NC}"
     rm -rf ${TMP_DIR}
     exit 1
 fi
