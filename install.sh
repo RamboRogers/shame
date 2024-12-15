@@ -27,10 +27,11 @@ case ${ARCH} in
 esac
 
 # Set binary name based on OS
-BINARY_NAME="shame-v1.0.0-${OS}-${ARCH}"
+BINARY_NAME="shame-v-${OS}-${ARCH}"
 if [ "${OS}" = "darwin" ]; then
-    OS="macos"
-    BINARY_NAME="shame-v1.0.0-${OS}-${ARCH}"
+    BINARY_NAME="shame-v-darwin-${ARCH}"
+elif [ "${OS}" = "linux" ]; then
+    BINARY_NAME="shame-v-linux-${ARCH}"
 fi
 
 # GitHub raw URL
