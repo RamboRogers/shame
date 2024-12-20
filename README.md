@@ -22,6 +22,8 @@ Perfect for developers, content creators, and anyone who needs hassle-free file 
 - **🔐 Authentication**: Enhanced security with authenticated mode by default
 - **🌐 Cloudflare Integration**: Secure HTTPS access with dynamic tunneling
 - **🛡️ Access Controls**: Flexible modes including read-only and insecure options
+- **🔗 Direct Link Sharing**: Share files with a single click
+- **📁 WebDAV Support**: Mount SHAME as a network drive on any device
 
 ## ⚡ Installation
 
